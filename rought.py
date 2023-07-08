@@ -7,7 +7,7 @@ app = Flask(__name__)
 def main_route():
     data = request.get_json()
     if "'Sage'" in data or "Claude+" in data or "Claude_instant" in data:
-        response = requests.post('https://poeapi.yserver.top', json=data)
+        response = requests.post('https://', json=data)
     else:
         response = requests.post('https://api.openai-sb.com', json=data)
 
