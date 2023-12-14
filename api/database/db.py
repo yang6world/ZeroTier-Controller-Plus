@@ -34,6 +34,7 @@ class User(Base):
     lsat_login_time = Column(String)
     password = Column(String)
 
+
 class ztnode(Base):
     __tablename__ = "ztnode"
 
