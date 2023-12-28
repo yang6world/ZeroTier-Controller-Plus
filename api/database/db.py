@@ -26,6 +26,7 @@ class User(Base):
     uid = Column(Integer, primary_key=True)
     username = Column(String)
     email = Column(String)
+    is_verified = Column(Integer)
     is_active = Column(Integer)
 
     level = Column(Integer)

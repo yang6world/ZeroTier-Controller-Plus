@@ -13,7 +13,7 @@ class Email:
         self.mail_pass = config.SMTP_PASSWORD  # 口令
         self.sender = config.SMTP_SENDER
 
-    def send_registration_email(self, receivers, subject, user_name):
+    def send_registration_email(self, receivers, subject, user_name, registration):
         # 构建注册确认的邮件内容
         message_content = f"亲爱的 {user_name},\n\n感谢您注册我们的服务。请点击下面的链接来激活您的账户:\n{registration}"
 
