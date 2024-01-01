@@ -43,6 +43,7 @@ class ztnode(Base):
     node_name = Column(String)
     node_owner_id = Column(String)
     node_ip = Column(String)
+    node_token = Column(String)
     node_location = Column(String)
     node_create_time = Column(String)
     node_status = Column(Integer)
