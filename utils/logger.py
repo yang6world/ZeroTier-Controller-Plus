@@ -6,7 +6,7 @@ from datetime import datetime
 from api.config import Config
 
 def init_logger():
-    pass
+    logging.basicConfig()
 
 def get_logger():
     pass
